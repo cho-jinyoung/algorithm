@@ -1,4 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+//DES(Data encryption standard) > 대칭키 블록 암호
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 // 상수 정의
