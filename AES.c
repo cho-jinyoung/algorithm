@@ -1,4 +1,4 @@
-
+#AES( Advanced Encryption Standard )
 #include <stdio.h>
 
 void statePrint(unsigned char state[0x04][0x04]);
@@ -124,8 +124,8 @@ void MixColumns(unsigned char state[0x04][0x04],int k) {
 	for (i = 0; i < 4; i++) {
 		for (j = 0; j < 4; j++) {
 			a[j] = state[j][i];  //01
-			h = (unsigned char)((signed char)state[j][i] >> 7); //ÃÖ»óÀ§ºñÆ®ÆÇº° 0,1
-			b[j] = state[j][i] << 1; //ÁÂ½¬ÇÁÆ®
+			h = (unsigned char)((signed char)state[j][i] >> 7); //ìµœìƒìœ„ë¹„íŠ¸íŒë³„ 0,1
+			b[j] = state[j][i] << 1; //ì¢Œì‰¬í”„íŠ¸
 			b[j] ^= 0x1b & h;  //02
 		}
 		state[0][i] = b[0] ^ a[3] ^ a[2] ^ b[1] ^ a[1];
