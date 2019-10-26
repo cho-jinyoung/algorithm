@@ -1,4 +1,4 @@
-#AES( Advanced Encryption Standard )
+//AES (Advanced Encryption Standard)
 #include <stdio.h>
 
 void statePrint(unsigned char state[0x04][0x04]);
