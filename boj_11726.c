@@ -16,3 +16,4 @@ int main(){
 		tile[i+1]=(tile[i-1]+tile[i])%10007;		
 	printf("%d", tile[input]); 
 }
+ 
