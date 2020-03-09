@@ -35,4 +35,4 @@ int main(){
 	for(j=0;j<10;j++)
 		count=(count+num[input][j])%MOD;
 	printf("%d", count);
-} 
+}  
