@@ -27,7 +27,7 @@ int main(){
 			two=two/10;
 		}
 	}
-//	printf("%d\n", max);
+//숫자를 거꾸로 출력하기 위해
 	for(i=0;i<3;i++){
 		output[i]=max%10;
 		max=max/10;
