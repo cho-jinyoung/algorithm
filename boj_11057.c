@@ -8,21 +8,19 @@
 #define MOD 10007
 
 int main(){
-	// !!배열 초기화!! > n[k][i]가 첫번째로 더해질 때 쓰레기값이 들어있음  
+	// 배열 초기화! > n[k][i]가 첫번째로 더해질 때 쓰레기값이 들어있음  
 	int input, i, j, k, n[1001][10]={}, sum=0;
 	
 	scanf("%d", &input);
 	
 	for(i=0;i<10;i++)
-		n[1][i]=1;
-	
+		n[1][i]=1;	
 	for(k=2;k<=input;k++)
 		for(i=0;i<10;i++)
 			for(j=i;j<10;j++)
-				n[k][i]=(n[k][i]+n[k-1][j])%MOD;
-						
+				n[k][i]=(n[k][i]+n[k-1][j])%MOD;						
 	for(k=0;k<10;k++)
 		sum=(sum+n[input][k])%MOD;	
-		
+	
 	printf("%d", sum);
 } 
