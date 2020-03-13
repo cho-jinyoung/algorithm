@@ -33,4 +33,4 @@ int main(){
 	printf("%d", big_max);	
 } 
 
-// cf) 다른 풀이 방법: O(N log N) 알고리즘
+// cf) 다른 풀이 방법: O(N log N) 알고리즘 > 더 생각해볼것 
