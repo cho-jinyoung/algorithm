@@ -10,7 +10,7 @@
 #define MAX(x,y) ((x)>(y)?(x):(y))
 
 int main(){
-	// dp=부분 수열의 합  
+	// dp=증가 부분 수열의 합 중 가장 큰 값   
 	int input, a[1000], i, j, dp[1000]={}, big_max=0;
 	
 	scanf("%d", &input);
@@ -31,7 +31,6 @@ int main(){
 		dp[i]=big_max;		
 	} 
 	for(i=0;i<input;i++)
-		big_max=MAX(big_max, dp[i]);
-		
+		big_max=MAX(big_max, dp[i]);		
 	printf("%d", big_max);
 }  
