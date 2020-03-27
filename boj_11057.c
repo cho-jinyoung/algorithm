@@ -14,13 +14,14 @@ int main(){
 	scanf("%d", &input);
 	
 	for(i=0;i<10;i++)
-		n[1][i]=1;	
+		n[1][i]=1;
+	
 	for(k=2;k<=input;k++)
 		for(i=0;i<10;i++)
 			for(j=i;j<10;j++)
 				n[k][i]=(n[k][i]+n[k-1][j])%MOD;						
-	for(k=0;k<10;k++)
-		sum=(sum+n[input][k])%MOD;	
+	for(i=0;i<10;i++)
+		sum=(sum+n[input][i])%MOD;	
 	
 	printf("%d", sum);
 } 
